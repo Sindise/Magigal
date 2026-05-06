@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 42674863c9199d8489ddb2e07a457386
+guid: 6cee78f8e671e0c43814f2a6ef63f964
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5720202956136529497
-    second: GroundBlock_0
+      213: 109013552707271033
+    second: Backdrop_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GroundBlock_0
+      name: Backdrop_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 1920
+        height: 1440
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a1c754e7b1cd90b0800000000000000
-      internalID: -5720202956136529497
+      spriteID: 979f1d4af3b438100800000000000000
+      internalID: 109013552707271033
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GroundBlock_0: -5720202956136529497
+      Backdrop_0: 109013552707271033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

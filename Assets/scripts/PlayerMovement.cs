@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private new Camera camera;
     private new Rigidbody2D rigidbody;
 
     private Vector2 velocity;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        camera = Camera.main; 
     }
 
     private void Update()

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973160023810129235}
   - component: {fileID: 4593618407150078212}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7241981287664546401}
   - component: {fileID: 383378769649014985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Magical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 2735780406246141423}
   - component: {fileID: 342628322441974072}
   - component: {fileID: 5928634256538606370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gal
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -287,3 +287,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  maxJumpHeight: 5
+  maxJumpTime: 1

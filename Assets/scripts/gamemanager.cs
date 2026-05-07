@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class gamemanager : MonoBehaviour
 {
-    public static GameManager instance { get; private set; }
+    public static gamemanager instance { get; private set; }
 
     public int world { get; private set; }
     public int stage { get; private set; }
@@ -28,7 +28,7 @@ private void OnDestroy()
         instance = null;
     }
 }
-private void start()
+private void Start()
 {
     NewGame();
 }
@@ -55,7 +55,7 @@ public void NextLevel()
 
 public void ResetLevel(float delay)
     {
-        invoke(nameof(ResetLevel), delay);
+        Invoke(nameof(ResetLevel), delay);
     }
 public void Resetlevel()
     {

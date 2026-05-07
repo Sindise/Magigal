@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 2013040463604437807}
   - component: {fileID: 2735780406246141423}
   - component: {fileID: 342628322441974072}
-  - component: {fileID: 5928634256538606370}
+  - component: {fileID: 1596658056962516637}
   m_Layer: 3
   m_Name: Gal
   m_TagString: Player
@@ -274,7 +274,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.1, y: -0.1}
   m_Size: {x: 1, y: 1.9}
   m_Direction: 0
---- !u!114 &5928634256538606370
+--- !u!114 &1596658056962516637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

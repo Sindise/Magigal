@@ -1,16 +1,76 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class gamemanager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManager instance { get; private set; }
+
+    public int world { get; private set; }
+    public int stage { get; private set; }
+    public int lives { get; private set; }
+
+private void awake()
+{
+    if (instance != null)
     {
-        
+        DestroyImmediate(gameObject);
+    }
+    else
+    {
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+}
+private void OnDestroy()
+{
+    if (instance == this)
     {
-        
+        instance = null;
     }
+}
+private void start()
+{
+    NewGame();
+}
+private void NewGame()
+    {
+        lives = 3;
+
+         LoadLevel(1, 1);
+    }
+    
+
+private void LoadLevel(int world, int stage)
+    {
+       this.world = world; 
+       this.stage = stage;
+
+       SceneManager.LoadScene($"{world}-{stage}");
+    }
+
+public void NextLevel()
+    {
+        LoadLevel(world, stage + 1);
+    }
+
+public void ResetLevel(float delay)
+    {
+        invoke(nameof(ResetLevel), delay);
+    }
+public void Resetlevel()
+    {
+        lives--;
+
+        if (lives >0){
+            LoadLevel(world, stage);
+        } else{ 
+            GameOver();
+        }
+    }
+
+private void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
 }
